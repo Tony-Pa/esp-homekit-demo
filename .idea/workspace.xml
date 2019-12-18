@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a6909a4-f5ce-439b-83ba-6f97c1bfb579" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/component.mk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/mux.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/mux.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/esp32/led/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/led/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/cJSON" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/cJSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/common/cJSON/cJSON" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/cJSON/cJSON" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="esp-homekit-demo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="226" column="3" selection-start-line="226" selection-start-column="3" selection-end-line="226" selection-end-column="3" />
+              <folding>
+                <element signature="e#6722#7002#0" />
+                <element signature="e#7004#7438#0" />
+                <element signature="e#7440#8686#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/humidifier/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="77" column="100" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="110" column="13" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="13" />
+              <folding>
+                <element signature="e#492#945#0" />
+                <element signature="e#947#1530#0" />
+                <element signature="e#3117#3316#0" />
+                <element signature="e#3116#3147#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/component.mk">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/led/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-26716">
+              <caret line="872" column="47" selection-start-line="872" selection-start-column="8" selection-end-line="872" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>[5]</find>
+      <find>current_color</find>
+      <find>multipwm</find>
+      <find>LOW</find>
+      <find>active</find>
+      <find>value.</find>
+      <find>HIGH</find>
+      <find>name</find>
+      <find>relay_count</find>
+      <find>led_channel_num</find>
+      <find>indexes</find>
+      <find>led_write</find>
+      <find>on_status_update</find>
+      <find>enabled_leds</find>
+      <find>led_init</find>
+      <find>gpio_</find>
+      <find>switch_on</find>
+      <find>HOMEKIT_DECLARE_CHARACTERISTIC_ID</find>
+      <find>HOMEKIT_DECLARE_CHARACTERISTIC_ON</find>
+      <find>CURRENT_HUMIDIFIER_DEHUMIDIFIER_STATE</find>
+      <find>TARGET_HUMIDIFIER_DEHUMIDIFIER_STATE</find>
+      <find>HOMEKIT_DECLARE_CHARACTERISTIC_</find>
+      <find>HOMEKIT_CHARACTERISTIC</find>
+      <find>homekit_characteristic_t</find>
+      <find>HOMEKIT_CHARACTERISTIC_CALLBACK</find>
+      <find>_homekit_characteristic</find>
+      <find>IDEN</find>
+      <find>xTaskCreate</find>
+      <find>int</find>
+      <find>NEW_HOMEKIT_CHARACTERISTIC</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>setWaterLevel</replace>
+      <replace>*index</replace>
+      <replace>(*led_on[*index])</replace>
+      <replace>led_on[i]</replace>
+      <replace>relay</replace>
+      <replace>setCurrentColor</replace>
+      <replace>LIGHT_RELAY</replace>
+      <replace>LED_CHANNEL_NUM</replace>
+      <replace>pin_write</replace>
+      <replace>on_status_update</replace>
+      <replace>enabled_switches</replace>
+      <replace>pin_init</replace>
+      <replace>uint32_t</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/accessories</dir>
+      <dir>$PROJECT_DIR$/components/common/homekit</dir>
+      <dir>$PROJECT_DIR$/components</dir>
+      <dir>$PROJECT_DIR$/examples</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/accessories/esp32/lights/main/mux.c" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights/main/mux.h" />
+        <option value="$PROJECT_DIR$/components/common/homekit/include/homekit/types.h" />
+        <option value="$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights/main/main.c" />
+        <option value="$PROJECT_DIR$/accessories/esp32/led/Makefile" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights/Makefile" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectId" id="1UmpyY2uoL2tK11CFLlhIchR7Zg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="humidifier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="kitchen_hood" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/accessories/esp32/lights/main" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/accessories/esp32/lights/main" />
+      <recent name="$PROJECT_DIR$/accessories/esp32" />
+      <recent name="$PROJECT_DIR$/accessories/humidifier" />
+      <recent name="$PROJECT_DIR$/accessories/kitchen_hood" />
+      <recent name="$PROJECT_DIR$/accessories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/accessories/kitchen_hood" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a6909a4-f5ce-439b-83ba-6f97c1bfb579" name="Default Changelist" comment="" />
+      <created>1554205996531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554205996531</updated>
+      <workItem from="1554205998155" duration="54204000" />
+      <workItem from="1554484682177" duration="25680000" />
+      <workItem from="1554920908605" duration="644000" />
+      <workItem from="1555028607331" duration="17397000" />
+      <workItem from="1557242126339" duration="234000" />
+      <workItem from="1557258780518" duration="2719000" />
+      <workItem from="1557345844206" duration="3022000" />
+      <workItem from="1557743585926" duration="124000" />
+      <workItem from="1559721031526" duration="150000" />
+      <workItem from="1562242654089" duration="229000" />
+      <workItem from="1562242956921" duration="14554000" />
+      <workItem from="1562871539642" duration="9849000" />
+      <workItem from="1563186503733" duration="4631000" />
+      <workItem from="1564235710482" duration="617000" />
+      <workItem from="1564237767561" duration="3779000" />
+      <workItem from="1564244226337" duration="478000" />
+      <workItem from="1564244825318" duration="55793000" />
+      <workItem from="1564590706117" duration="2410000" />
+      <workItem from="1565027807469" duration="597000" />
+      <workItem from="1565893672121" duration="1066000" />
+      <workItem from="1566557710072" duration="307000" />
+      <workItem from="1567152499456" duration="133000" />
+      <workItem from="1568541181206" duration="175000" />
+      <workItem from="1569158071898" duration="1604000" />
+      <workItem from="1571602336972" duration="53000" />
+      <workItem from="1571908070409" duration="652000" />
+      <workItem from="1572884604657" duration="145000" />
+      <workItem from="1573123526499" duration="540000" />
+      <workItem from="1573474981919" duration="564000" />
+      <workItem from="1574155571059" duration="1655000" />
+      <workItem from="1574674516279" duration="820000" />
+      <workItem from="1574867614462" duration="37782000" />
+      <workItem from="1575538831194" duration="4616000" />
+      <workItem from="1575971881915" duration="52000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10939000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23962805" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Arduino Support" order="7" weight="0.3299363" />
+      <window_info anchor="bottom" id="Serial Monitor" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299363" />
+      <window_info anchor="bottom" id="CMake" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676682" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Arduino Support" order="7" weight="0.3299363" />
+      <window_info anchor="bottom" id="Serial Monitor" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21656051" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299363" />
+      <window_info anchor="bottom" id="CMake" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/sonoff_s20/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="55" selection-start-line="55" selection-end-line="86" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/led/main/led.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="23" column="33" lean-forward="true" selection-end-line="216" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/esp32/led/main/led.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/esp32/dynamic_services/main/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wifi.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="55" lean-forward="true" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="226" column="3" selection-start-line="226" selection-start-column="3" selection-end-line="226" selection-end-column="3" />
+          <folding>
+            <element signature="e#6722#7002#0" />
+            <element signature="e#7004#7438#0" />
+            <element signature="e#7440#8686#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/common/homekit/include/homekit/types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26716">
+          <caret line="872" column="47" selection-start-line="872" selection-start-column="8" selection-end-line="872" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/humidifier/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="77" column="100" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="110" column="13" selection-start-line="110" selection-start-column="2" selection-end-line="110" selection-end-column="13" />
+          <folding>
+            <element signature="e#492#945#0" />
+            <element signature="e#947#1530#0" />
+            <element signature="e#3117#3316#0" />
+            <element signature="e#3116#3147#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/sdkconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/sdkconfig.old">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/led/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/component.mk">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
