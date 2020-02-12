@@ -24,6 +24,7 @@
 uint8_t enabled_switches = LED_CHANNEL_NUM;
 uint8_t iItem[LED_CHANNEL_NUM];
 uint8_t currentSensor = 0;
+bool relayBusy = false;
 
 homekit_characteristic_t switch_on[LED_CHANNEL_NUM];
 
@@ -34,25 +35,20 @@ const uint8_t sensorsControlPins[MUX_CONTROLS] = {25, 26, 27, 33};
 const uint8_t sensorsChanelPins[2] = {ADC1_CHANNEL_0, ADC1_CHANNEL_6}; // 36, 34
 
 void pin_init() {
-  uint8_t i = 0;
-  for (i = 0; i < MUX_CONTROLS; i++) {
+  for (uint8_t i = 0; i < MUX_CONTROLS; i++) {
     gpio_set_direction(relaysControlPins[i], GPIO_MODE_OUTPUT);
     gpio_set_level(relaysControlPins[i], 0);
-  }
 
-  for (i = 0; i < MUX_CONTROLS; i++) {
     gpio_set_direction(sensorsControlPins[i], GPIO_MODE_OUTPUT);
     gpio_set_level(sensorsControlPins[i], 0);
   }
 
+  adc1_config_width(ADC_WIDTH_12Bit);
   for (uint8_t i = 0; i < 2; i++) {
     gpio_set_direction(relaysChanelPins[i], GPIO_MODE_OUTPUT);
     gpio_set_level(relaysChanelPins[i], RELAY_OFF);
-  }
 
-  adc1_config_width(ADC_WIDTH_12Bit);
-  for (uint8_t i = 0; i < 2; i++) {
-    adc1_config_channel_atten(sensorsChanelPins[i], ADC_ATTEN_6db);
+    adc1_config_channel_atten(sensorsChanelPins[i], ADC_ATTEN_11db);
   }
 }
 
@@ -136,7 +132,7 @@ bool get_switch_status(uint8_t index) {
   uint8_t off = 0;
 
   for (uint8_t i = 0; i < 11; i++) {
-    if (get_mux(accessories_config[index].sensor, sensorsControlPins, sensorsChanelPins) > 50 ? true : false) {
+    if (get_mux(accessories_config[index].sensor, sensorsControlPins, sensorsChanelPins) < 100 ? true : false) {
       on++;
     }
     else {
@@ -151,12 +147,25 @@ bool get_switch_status(uint8_t index) {
 }
 
 void toggle_relay_task(void *_args) {
+  uint8_t i = 0;
+  while (relayBusy) {
+    vTaskDelay(220 / portTICK_PERIOD_MS);
+    i++;
+
+    if (i < 10) {
+      printf("toggle_relay_task: exit by iterator\n");
+      break;
+    }
+  }
+
+  relayBusy = true;
   uint8_t *channel = _args;
 
   set_relay_status(*channel, RELAY_ON);
   vTaskDelay(200 / portTICK_PERIOD_MS);
   set_relay_status(*channel, RELAY_OFF);
 
+  relayBusy = false;
   vTaskDelete(NULL);
 }
 

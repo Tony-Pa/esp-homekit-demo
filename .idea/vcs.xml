@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/common/homekit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/common/wolfssl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-32/http-parser" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/WS2812FX" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/cJSON" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/cJSON/cJSON" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/led-status" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/qrcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/components/esp-8266/wifi_config" vcs="Git" />
+  </component>
+</project>

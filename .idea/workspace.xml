@@ -10,18 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6909a4-f5ce-439b-83ba-6f97c1bfb579" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/component.mk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/esp-homekit-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/serialmonitor_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/effects.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/globals.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/globals.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/adv_button.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/adv_button.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/component.mk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/gyverLamp/libraries/utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/adv_button.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/adv_button.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/component.mk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accessories/esp32/lights/main/config.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/config.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accessories/esp32/lights/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessories/esp32/lights/main/mux.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights/main/mux.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/kitchen_hood/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/kitchen_hood/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories/kitchen_hood/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/accessories/kitchen_hood/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/homekit" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/homekit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h" beforeDir="false" afterPath="$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h" afterDir="false" />
     </list>
@@ -39,44 +61,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/main.c">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="174" column="24" lean-forward="true" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
-              <folding>
-                <element signature="e#1406#1859#0" />
-                <element signature="e#1861#2444#0" />
-                <element signature="e#6528#6658#0" />
-                <element signature="e#6660#6927#0" />
-              </folding>
+            <state>
+              <caret column="17" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/led/led.c">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="32" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/lock/main.c">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="151" column="51" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="51" />
+            <state relative-caret-position="315">
+              <caret line="21" column="38" selection-start-line="21" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.h">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="601">
+              <caret line="142" column="10" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -84,8 +109,70 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="415">
+              <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="183" column="24" lean-forward="true" selection-start-line="183" selection-start-column="24" selection-end-line="183" selection-end-column="24" />
+              <folding>
+                <element signature="e#814#1325#0" />
+                <element signature="e#1349#1802#0" />
+                <element signature="e#1804#2387#0" />
+                <element signature="e#2519#3188#0" />
+                <element signature="e#3190#3413#0" />
+                <element signature="e#3618#4073#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/effects.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="617">
+              <caret line="269" selection-start-line="269" selection-end-line="269" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/globals.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-712">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/globals.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="80" column="66" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -93,8 +180,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77">
+            <state relative-caret-position="1425">
               <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/utils.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.c">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -103,36 +239,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.context =</find>
-      <find>indexes</find>
-      <find>.getter</find>
-      <find>GPIO_MODE_INPUT</find>
-      <find>GPIO_MODE_OUTPUT</find>
-      <find>.setter</find>
-      <find>pwm</find>
-      <find>pwm_ta</find>
-      <find>multipwm_task</find>
-      <find>xLastWakeTime</find>
-      <find>xPeriod</find>
-      <find>while(1</find>
-      <find>LPF_INTERVAL</find>
-      <find>led_on</find>
-      <find>xTaskCreate</find>
-      <find>IDENTIFY</find>
-      <find>homekit_accessories_init</find>
-      <find>HOMEKIT_SPI_FLASH_BASE_ADDR</find>
-      <find>&amp;</find>
-      <find>спаль</find>
+      <find>getPixColorNum</find>
+      <find>ws2812_pixel_t</find>
+      <find>angleSpeed</find>
+      <find>speedV</find>
+      <find>lightersRoutine</find>
+      <find>pgm_read_byte</find>
+      <find>memset</find>
+      <find>printf</find>
+      <find>hueMask</find>
+      <find>fillAll</find>
+      <find>random</find>
+      <find>LEDS_SATURATION</find>
+      <find>hsv_to_rgb</find>
+      <find>wifi_init</find>
+      <find>shiftUp</find>
+      <find>pcnt</find>
+      <find>FASTLED_INTERNAL</find>
+      <find>GPIO_MODE_</find>
+      <find>on_wifi_ready</find>
+      <find>check_sensors_task</find>
       <find>ADC1_CHANNEL_0</find>
-      <find>switch_on</find>
-      <find>setter</find>
-      <find>getter</find>
-      <find>accessories[</find>
-      <find>NEW_HOMEKIT_ACCESSORY</find>
-      <find>get_switch_status</find>
-      <find>homekit_accessory_category_b</find>
-      <find>bridge</find>
-      <find>statuses</find>
+      <find>ADC1_CHANNEL_03</find>
+      <find>matrixValue</find>
+      <find>globalBrightness</find>
+      <find>scale</find>
+      <find>hue</find>
+      <find>valueMask</find>
+      <find>RgbToHsv</find>
+      <find>HsvColor</find>
+      <find>ws2812_rgb_t</find>
     </findStrings>
     <replaceStrings>
       <replace>setWaterLevel</replace>
@@ -147,11 +283,19 @@
       <replace>enabled_switches</replace>
       <replace>pin_init</replace>
       <replace>uint32_t</replace>
-      <replace>uint32_t</replace>
       <replace />
       <replace>accessories_config</replace>
       <replace>*index</replace>
       <replace>uint8_t</replace>
+      <replace>getPixHEX</replace>
+      <replace>random</replace>
+      <replace>hwrand</replace>
+      <replace>rgb.red</replace>
+      <replace>rgb.green</replace>
+      <replace>rgb.blue</replace>
+      <replace>rgb_to_hsv</replace>
+      <replace>hsv_t</replace>
+      <replace>rgb_t</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -175,12 +319,29 @@
         <option value="$PROJECT_DIR$/accessories/esp32/lights/Makefile" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/Makefile" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights/main/config.h" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights/main/config.c" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/led.c" />
+        <option value="$PROJECT_DIR$/accessories/kitchen_hood/Makefile" />
+        <option value="$PROJECT_DIR$/accessories/kitchen_hood/main.c" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/libraries/utils.cpp" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/libraries/utils.c" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/Makefile" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.cpp" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/libraries/gyverLamp.h" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.c" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.h" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.c" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.h" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights/main/mux.c" />
-        <option value="$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c" />
-        <option value="$PROJECT_DIR$/accessories/esp32/lights/main/config.c" />
         <option value="$PROJECT_DIR$/accessories/esp32/lights/main/main.c" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.h" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/effects.h" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/globals.h" />
+        <option value="$PROJECT_DIR$/accessories/gyverLamp/globals.c" />
       </list>
     </option>
   </component>
@@ -234,39 +395,23 @@
             <path>
               <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+              <item name="lights_setup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="esp32" type="462c0819:PsiDirectoryNode" />
+              <item name="lights_setup" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="homekit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="homekit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="esp-homekit-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="esp-homekit-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
+              <item name="accessories" type="462c0819:PsiDirectoryNode" />
+              <item name="gyverLamp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,20 +424,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/accessories/esp32" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/accessories/gyverLamp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.postfix.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/accessories/gyverLamp" />
+      <recent name="$PROJECT_DIR$/accessories/gyverLamp/libraries" />
       <recent name="$PROJECT_DIR$/accessories/kitchen_hood" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/accessories/esp32" />
-      <recent name="$PROJECT_DIR$/accessories/esp32/lights/main" />
-      <recent name="$PROJECT_DIR$/accessories/humidifier" />
+      <recent name="$PROJECT_DIR$/accessories/gyverLamp" />
+      <recent name="$PROJECT_DIR$/accessories/gyverLamp/libraries" />
       <recent name="$PROJECT_DIR$/accessories/kitchen_hood" />
+      <recent name="$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED" />
       <recent name="$PROJECT_DIR$/accessories" />
     </key>
   </component>
@@ -352,19 +499,26 @@
       <workItem from="1574867614462" duration="37782000" />
       <workItem from="1575538831194" duration="4616000" />
       <workItem from="1575971881915" duration="52000" />
+      <workItem from="1578491582816" duration="13193000" />
+      <workItem from="1580494116131" duration="17577000" />
+      <workItem from="1580574222929" duration="40971000" />
+      <workItem from="1580780090924" duration="100000" />
+      <workItem from="1580906587563" duration="5134000" />
+      <workItem from="1580978744454" duration="950000" />
+      <workItem from="1581064711816" duration="18849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49132000" />
+    <option name="totallyTimeSpent" value="146275000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23962805" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.26466382" />
+      <window_info id="Structure" order="1" sideWeight="0.505071" side_tool="true" weight="0.26466382" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -375,33 +529,34 @@
       <window_info anchor="bottom" id="Arduino Support" order="7" weight="0.3299363" />
       <window_info anchor="bottom" id="Serial Monitor" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299363" />
-      <window_info anchor="bottom" id="CMake" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49928468" weight="0.25477707" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007153" side_tool="true" weight="0.6" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49928468" weight="0.32866243" />
+      <window_info anchor="bottom" id="CMake" order="13" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23962805" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.26466382" />
+      <window_info id="Structure" order="1" sideWeight="0.505071" side_tool="true" weight="0.26466382" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Arduino Support" order="7" weight="0.3299363" />
-      <window_info anchor="bottom" id="Serial Monitor" order="8" weight="0.3299363" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299363" />
-      <window_info anchor="bottom" id="CMake" order="13" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Arduino Support" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Serial Monitor" order="9" weight="0.3299363" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49928468" visible="true" weight="0.25477707" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.6" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49928468" weight="0.32866243" />
+      <window_info anchor="bottom" id="CMake" order="14" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -444,226 +599,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/sonoff_s20/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="55" selection-start-line="55" selection-end-line="86" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/esp32/dynamic_services/main/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wifi.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/homekit/include/homekit/types.h" />
-    <entry file="file://$PROJECT_DIR$/accessories/humidifier/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="77" column="100" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/sdkconfig" />
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/sdkconfig.old" />
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/led/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/component.mk">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/DoorRelay/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitmodules">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/led/led.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="31" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/led/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/humidifier/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/button/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/sonoff_basic_pwm/pwm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/sonoff_basic_pwm/pwm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/build/main/libmain.a.sections_info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="36" />
-          <folding>
-            <element signature="e#6722#7002#0" />
-            <element signature="e#7004#7438#0" />
-            <element signature="e#7440#8686#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/wolfssl/wolfssl-4.1.0/IDE/Espressif/ESP-IDF/test/test_wolfssl.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="1029" column="4" selection-start-line="1029" selection-start-column="4" selection-end-line="1029" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/ZemiSmart/light.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2567">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/magic_home_strip/magic_home.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="233" column="76" selection-start-line="233" selection-start-column="76" selection-end-line="233" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/led/main/led.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="80" selection-start-line="80" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/esp32/led/main/led.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="95" column="23" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/homekit/include/homekit/characteristics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="889" column="72" selection-start-line="889" selection-start-column="72" selection-end-line="889" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/homekit/src/base64.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/homekit/src/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="3520" column="28" selection-start-line="3520" selection-start-column="4" selection-end-line="3520" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/common/homekit/src/accessories.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2877">
-          <caret line="397" column="56" selection-start-line="397" selection-start-column="56" selection-end-line="397" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/esp32/led/Makefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/lock/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/esp32/dynamic_services/Makefile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -681,55 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/lock/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -739,28 +625,281 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/led/led.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="50">
           <caret line="59" column="32" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.c">
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/button.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wifi.h.sample">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/adv_button.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="273" column="27" selection-start-line="273" selection-start-column="27" selection-end-line="273" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/wifi_config/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/adv_button.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/component.mk">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED/docs/Doxyfile" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED/component.mk" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED/led_sysdefs.h" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/main.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../esp-open-rtos/libc/xtensa-lx106-elf/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../esp-open-rtos/lwip/include/arch/cc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="70" column="91" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/libraries/adv_button/adv_button.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/led/led.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/DoorRelay/relay.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="121" column="21" selection-start-line="121" selection-start-column="2" selection-end-line="121" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/humidifier/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1570">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/kitchen_hood/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="251" lean-forward="true" selection-start-line="251" selection-end-line="251" />
+          <folding>
+            <element signature="e#7004#7438#0" />
+            <element signature="e#7440#8686#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/adv_button/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED-3.2.9/component.mk" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED-3.2.9/docs/Doxyfile" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/FastLED-3.2.9/lib8tion.h" />
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/humidifier/button.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/libraries/power_mgt.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="357" selection-start-line="357" selection-end-line="357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="142" column="10" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/mux.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="174" column="24" lean-forward="true" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
+        <state relative-caret-position="621">
+          <caret line="183" column="24" lean-forward="true" selection-start-line="183" selection-start-column="24" selection-end-line="183" selection-end-column="24" />
           <folding>
-            <element signature="e#1406#1859#0" />
-            <element signature="e#1861#2444#0" />
-            <element signature="e#6528#6658#0" />
-            <element signature="e#6660#6927#0" />
+            <element signature="e#814#1325#0" />
+            <element signature="e#1349#1802#0" />
+            <element signature="e#1804#2387#0" />
+            <element signature="e#2519#3188#0" />
+            <element signature="e#3190#3413#0" />
+            <element signature="e#3618#4073#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights/main/config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/esp32/lights_setup/main/mux.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/gyverLamp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/effects.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/globals.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-712">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accessories/gyverLamp/globals.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="80" column="66" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="66" />
         </state>
       </provider>
     </entry>

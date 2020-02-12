@@ -12,9 +12,9 @@
 
 #include <homekit/homekit.h>
 #include <homekit/characteristics.h>
-#include <wifi_config.h>
-
-#include "button.h"
+//#include <wifi_config.h>
+#include <adv_button.h>
+#include "wifi.h"
 
 #define SPEED_OFF 0x00
 #define SPEED_1 25
@@ -46,6 +46,17 @@ homekit_characteristic_t rotation_speed;
 
 void setLED(uint8_t status) {
   gpio_write(LIGHT_RELAY, status);
+}
+
+static void wifi_init() {
+  struct sdk_station_config wifi_config = {
+      .ssid = WIFI_SSID,
+      .password = WIFI_PASSWORD,
+  };
+
+  sdk_wifi_set_opmode(STATION_MODE);
+  sdk_wifi_station_set_config(&wifi_config);
+  sdk_wifi_station_connect();
 }
 
 void identify_task(void *_args) {
@@ -167,89 +178,87 @@ void light_state(homekit_characteristic_t *ch, homekit_value_t value, void *cont
   setLED(!value.int_value);
 }
 
-homekit_characteristic_t light_on = HOMEKIT_CHARACTERISTIC_(ON, false, .callback=HOMEKIT_CHARACTERISTIC_CALLBACK(light_state));
-homekit_characteristic_t active = HOMEKIT_CHARACTERISTIC_(ON, false, .callback=HOMEKIT_CHARACTERISTIC_CALLBACK(update_state));
-homekit_characteristic_t rotation_speed = HOMEKIT_CHARACTERISTIC_(ROTATION_SPEED, SPEED_OFF, .callback=HOMEKIT_CHARACTERISTIC_CALLBACK(update_speed));
+homekit_characteristic_t light_on = HOMEKIT_CHARACTERISTIC_(ON, false, .callback = HOMEKIT_CHARACTERISTIC_CALLBACK(light_state));
+homekit_characteristic_t active = HOMEKIT_CHARACTERISTIC_(ON, false, .callback = HOMEKIT_CHARACTERISTIC_CALLBACK(update_state));
+homekit_characteristic_t rotation_speed = HOMEKIT_CHARACTERISTIC_(ROTATION_SPEED,SPEED_OFF, .callback = HOMEKIT_CHARACTERISTIC_CALLBACK(update_speed));
 
 homekit_accessory_t *accessories[] = {
-  HOMEKIT_ACCESSORY(.id = 1, .category=homekit_accessory_category_fan, .services=(homekit_service_t *[]) {
-    HOMEKIT_SERVICE(ACCESSORY_INFORMATION,.characteristics = (homekit_characteristic_t *[]) {
-      HOMEKIT_CHARACTERISTIC(NAME, "Kitchen hood"),
-      HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Electrolux"),
-      HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "00001"),
-      HOMEKIT_CHARACTERISTIC(MODEL, "001"),
-      HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
-      HOMEKIT_CHARACTERISTIC(IDENTIFY, identify),
-      NULL
-    }),
-    HOMEKIT_SERVICE(FAN, .primary=true, .characteristics=(homekit_characteristic_t*[]) {
-      HOMEKIT_CHARACTERISTIC(NAME, "Kitchen hood"),
-      &active,
-      &rotation_speed,
-      NULL
-    }),
-    HOMEKIT_SERVICE(LIGHTBULB, .primary=false, .characteristics=(homekit_characteristic_t*[]){
-      HOMEKIT_CHARACTERISTIC(NAME, "Light"),
-      &light_on,
-      NULL
+    HOMEKIT_ACCESSORY(.id = 1, .category=homekit_accessory_category_fan, .services=(homekit_service_t *[]) {
+        HOMEKIT_SERVICE(ACCESSORY_INFORMATION,.characteristics = (homekit_characteristic_t *[]) {
+            HOMEKIT_CHARACTERISTIC(NAME, "Kitchen hood"),
+            HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Electrolux"),
+            HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "00001"),
+            HOMEKIT_CHARACTERISTIC(MODEL, "001"),
+            HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
+            HOMEKIT_CHARACTERISTIC(IDENTIFY, identify),
+            NULL
+        }),
+        HOMEKIT_SERVICE(FAN, .primary=true, .characteristics=(homekit_characteristic_t*[]) {
+          HOMEKIT_CHARACTERISTIC(NAME, "Kitchen hood"),
+              &active,
+              &rotation_speed,
+              NULL
+        }),
+        HOMEKIT_SERVICE(LIGHTBULB, .primary=false, .characteristics=(homekit_characteristic_t*[]){
+          HOMEKIT_CHARACTERISTIC(NAME, "Light"),
+              &light_on,
+              NULL
+        }),
+        NULL
     }),
     NULL
-  }),
-  NULL
 };
 
-
-void on_speed_button(uint8_t gpio, button_event_t event) {
+void on_speed_button(const uint8_t gpio, void *args, const uint8_t param) {
   printf("on_speed_button\n");
 
-  switch (event) {
-    case button_event_single_press:
-      if (active.value.bool_value) {
-        rotation_speed.value.float_value = rotation_speed.value.float_value + SPEED_STEP;
+  if (active.value.bool_value) {
+    rotation_speed.value.float_value = rotation_speed.value.float_value + SPEED_STEP;
 
-        if (rotation_speed.value.float_value > SPEED_4) {
-          rotation_speed.value.float_value = SPEED_1 - 1;
-        }
+    if (rotation_speed.value.float_value > SPEED_4) {
+      rotation_speed.value.float_value = SPEED_1 - 1;
+    }
 
-        homekit_characteristic_notify(&rotation_speed, rotation_speed.value);
-      }
-      else {
-        active.value.bool_value = !active.value.bool_value;
-        homekit_characteristic_notify(&active, active.value);
-      }
-      break;
-    case button_event_long_press:
-      active.value.bool_value = !active.value.bool_value;
-      homekit_characteristic_notify(&active, active.value);
-      break;
-    default:
-      printf("Unknown button event: %d\n", event);
+    homekit_characteristic_notify(&rotation_speed, rotation_speed.value);
+  } else {
+    active.value.bool_value = !active.value.bool_value;
+    homekit_characteristic_notify(&active, active.value);
   }
 }
 
-void on_light_button(uint8_t gpio, button_event_t event) {
+void on_speed_button_long_press(const uint8_t gpio, void *args, const uint8_t param) {
+  printf("on_speed_button_long_press\n");
+
+  active.value.bool_value = !active.value.bool_value;
+  homekit_characteristic_notify(&active, active.value);
+
+}
+
+void on_light_button(const uint8_t gpio, void *args, const uint8_t param) {
   printf("on_light_button\n");
 
-  switch (event) {
-    case button_event_single_press:
-      light_on.value.bool_value = !light_on.value.bool_value;
-      homekit_characteristic_notify(&light_on, light_on.value);
-      break;
-    case button_event_long_press:
-      reset_configuration();
-      break;
-    default:
-      printf("Unknown button event: %d\n", event);
-  }
+  light_on.value.bool_value = !light_on.value.bool_value;
+  homekit_characteristic_notify(&light_on, light_on.value);
+}
+
+void on_light_button_long_press(const uint8_t gpio, void *args, const uint8_t param) {
+  printf("on_light_button\n");
+
+  reset_configuration();
 }
 
 void init_buttons() {
-  if (button_create(SPEED_BUTTON_SPEED, 1, 2000, on_speed_button)) {
-    printf("Failed to initialize speed status button\n");
-  }
-  if (button_create(LIGHT_BUTTON, 1, 10000, on_light_button)) {
-    printf("Failed to initialize speed status button\n");
-  }
+  adv_button_set_evaluate_delay(10);
+
+  adv_button_create(SPEED_BUTTON_SPEED, true, false);
+
+  adv_button_register_callback_fn(SPEED_BUTTON_SPEED, on_speed_button, SINGLEPRESS_TYPE, NULL, 0);
+  adv_button_register_callback_fn(SPEED_BUTTON_SPEED, on_speed_button_long_press, VERYLONGPRESS_TYPE, NULL, 0);
+
+  adv_button_create(LIGHT_BUTTON, true, false);
+
+  adv_button_register_callback_fn(LIGHT_BUTTON, on_light_button, SINGLEPRESS_TYPE, NULL, 0);
+//  adv_button_register_callback_fn(LIGHT_BUTTON, on_light_button_long_press, HOLDPRESS_TYPE, NULL, 0);
 }
 
 void init_gpio() {
@@ -327,5 +336,7 @@ void user_init(void) {
   uart_set_baud(0, 115200);
   init_gpio();
 
-  wifi_config_init("Kitchen-hood", NULL, on_wifi_ready);
+  wifi_init();
+  on_wifi_ready();
+//  wifi_config_init("Kitchen-hood", NULL, on_wifi_ready);
 }

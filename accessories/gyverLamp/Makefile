@@ -1,13 +1,15 @@
-PROGRAM = humidifier
+PROGRAM = gyverLamp
 
 EXTRA_COMPONENTS = \
 	extras/http-parser \
 	extras/dhcpserver \
 	$(abspath libraries/adv_button) \
-    $(abspath ../../components/esp-8266/wifi_config) \
+	$(abspath ../../components/esp-8266/wifi_config) \
 	$(abspath ../../components/common/wolfssl) \
 	$(abspath ../../components/esp-8266/cJSON) \
 	$(abspath ../../components/common/homekit)
+
+EXTRA_COMPONENTS += extras/i2s_dma extras/ws2812_i2s
 
 FLASH_SIZE ?= 32
 

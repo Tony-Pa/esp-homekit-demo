@@ -42,4 +42,5 @@ uint8_t get_mux(uint8_t channel, uint8_t controlPins[MUX_CONTROLS], uint8_t chan
   }
 
   return adc1_get_voltage(chanelPins[mux_number]);
+//  return gpio_get_level(chanelPins[mux_number]);
 }
