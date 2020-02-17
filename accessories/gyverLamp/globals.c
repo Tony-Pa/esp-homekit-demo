@@ -1,4 +1,28 @@
-#import "globals.h"
+#include <FreeRTOS.h>
+#include <math.h>
+
+#include "gyverLamp.h"
+#include "globals.h"
+#include "libraries/scale8.h"
+#include "libraries/power_mgt.h"
+
+// установка макссимальной яркости
+void setMaxBrightness(uint8_t globalBrightness) {
+  uint8_t recommendedBrightness = calculate_max_brightness_for_power_mW(pixels, LEDS_COUNT, globalBrightness, MAX_POWER_mW);
+
+  if (recommendedBrightness != 255) {
+    for (int i = 0; i < LEDS_COUNT; i++) {
+      if (!pixels[i].red && !pixels[i].green && !pixels[i].blue) {
+        continue;
+      }
+
+      pixels[i].red = scale8(pixels[i].red, recommendedBrightness);
+      pixels[i].green = scale8(pixels[i].green, recommendedBrightness);
+      pixels[i].blue = scale8(pixels[i].blue, recommendedBrightness);
+    }
+  }
+}
+
 
 // залить все
 void fillAll(rgb_t color) {
@@ -16,6 +40,13 @@ uint16_t getPixelNumber(int8_t x, int8_t y) {
   } else {                          // если нечётная строка
     return (y * WIDTH + WIDTH - x - 1);
   }
+}
+
+// функция отрисовки точки по кномеру
+void drawPixel(int16_t num, rgb_t color) {
+  pixels[num].red = color.red;
+  pixels[num].green = color.green;
+  pixels[num].blue = color.blue;
 }
 
 // функция отрисовки точки по координатам X Y
@@ -77,55 +108,41 @@ int32_t constrain(int32_t val, int32_t min, int32_t max) {
   return val;
 }
 
-
-void hsv_to_rgb(uint8_t hsv_h, uint8_t hsv_s, uint8_t hsv_v) {
-  uint8_t sector, frac, p, q, t;
+#define LED_RGB_SCALE 255
+rgb_t hsv_to_rgb(float h, float s, float i) {
+  int r, g, b;
   rgb_t rgb;
 
-  if (hsv_s == 0) {  // achromatic
-    rgb->red = rgb->green = rgb->blue = hsv_v;
-    return;
+  while (h < 0) { h += 360.0F; };     // cycle h around to 0-360 degrees
+  while (h >= 360) { h -= 360.0F; };
+  h = 3.14159F*h / 180.0F;            // convert to radians.
+  s /= 100.0F;                        // from percentage to ratio
+  i /= 100.0F;                        // from percentage to ratio
+  s = s > 0 ? (s < 1 ? s : 1) : 0;    // clamp s and i to interval [0,1]
+  i = i > 0 ? (i < 1 ? i : 1) : 0;    // clamp s and i to interval [0,1]
+  i = i * sqrt(i);                    // shape intensity to have finer granularity near 0
+
+  if (h < 2.09439) {
+    r = LED_RGB_SCALE * i / 3 * (1 + s * cos(h) / cos(1.047196667 - h));
+    g = LED_RGB_SCALE * i / 3 * (1 + s * (1 - cos(h) / cos(1.047196667 - h)));
+    b = LED_RGB_SCALE * i / 3 * (1 - s);
+  }
+  else if (h < 4.188787) {
+    h = h - 2.09439;
+    g = LED_RGB_SCALE * i / 3 * (1 + s * cos(h) / cos(1.047196667 - h));
+    b = LED_RGB_SCALE * i / 3 * (1 + s * (1 - cos(h) / cos(1.047196667 - h)));
+    r = LED_RGB_SCALE * i / 3 * (1 - s);
+  }
+  else {
+    h = h - 4.188787;
+    b = LED_RGB_SCALE * i / 3 * (1 + s * cos(h) / cos(1.047196667 - h));
+    r = LED_RGB_SCALE * i / 3 * (1 + s * (1 - cos(h) / cos(1.047196667 - h)));
+    g = LED_RGB_SCALE * i / 3 * (1 - s);
   }
 
-  sector = hsv_h / 43;
-  frac = (hsv_h - (sector * 43)) * 6;
-
-  p = (hsv_v * (255 - hsv_s)) >> 8;
-  q = (hsv_v * (255 - ((hsv_s * frac) >> 8))) >> 8;
-  t = (hsv_v * (255 - ((hsv_s * (255 - frac)) >> 8))) >> 8;
-
-  switch (sector) {
-    case 0:
-      rgb->red = hsv_v;
-      rgb->green = t;
-      rgb->blue = p;
-      break;
-    case 1:
-      rgb->red = q;
-      rgb->green = hsv_v;
-      rgb->blue = p;
-      break;
-    case 2:
-      rgb->red = p;
-      rgb->green = hsv_v;
-      rgb->blue = t;
-      break;
-    case 3:
-      rgb->red = p;
-      rgb->green = q;
-      rgb->blue = hsv_v;
-      break;
-    case 4:
-      rgb->red = t;
-      rgb->green = p;
-      rgb->blue = hsv_v;
-      break;
-    default:        // case 5:
-      rgb->red = hsv_v;
-      rgb->green = p;
-      rgb->blue = q;
-      break;
-  }
+  rgb.red = (uint8_t) r;
+  rgb.green = (uint8_t) g;
+  rgb.blue = (uint8_t) b;
 
   return rgb;
 }

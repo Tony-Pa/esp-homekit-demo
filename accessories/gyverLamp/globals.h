@@ -2,6 +2,8 @@
 #ifndef MY_GLOBALS_H
 #define MY_GLOBALS_H
 
+#include <ws2812_i2s/ws2812_i2s.h>
+
 typedef struct {
   uint8_t red;
   uint8_t green;
@@ -14,15 +16,20 @@ typedef struct hsv_t {
   unsigned char v;
 } hsv_t;
 
-extern rgb_t blackRGB = {0, 0, 0};
 
-extern ws2812_pixel_t pixels[LEDS_COUNT];
+ws2812_pixel_t pixels[LEDS_COUNT];
+
+// установка макссимальной яркости
+void setMaxBrightness(uint8_t globalBrightness);
 
 // залить все
 void fillAll(rgb_t color);
 
 // получить номер пикселя в ленте по координатам
 uint16_t getPixelNumber(int8_t x, int8_t y);
+
+// функция отрисовки точки по кномеру
+void drawPixel(int16_t num, rgb_t color);
 
 // функции отрисовки точки по координатам X Y по номеру цвета
 void drawPixelXY(int8_t x, int8_t y, rgb_t color);
@@ -46,7 +53,7 @@ uint32_t getPixHEXXY(int8_t x, int8_t y);
 int32_t constrain(int32_t val, int32_t min, int32_t max);
 
 
-rgb_t hsv_to_rgb(uint8_t hsv_h, uint8_t hsv_s, uint8_t hsv_v);
+rgb_t hsv_to_rgb(float h, float s, float i);
 
 hsv_t rgb_to_hsv(rgb_t rgb);
 
