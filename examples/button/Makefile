@@ -2,7 +2,8 @@ PROGRAM = button
 
 EXTRA_COMPONENTS = \
 	extras/http-parser \
-	$(abspath ../../components/esp-8266/cJSON) \
+	$(abspath ../../components/common/button) \
+	$(abspath ../../components/esp8266-open-rtos/cJSON) \
 	$(abspath ../../components/common/wolfssl) \
 	$(abspath ../../components/common/homekit)
 
